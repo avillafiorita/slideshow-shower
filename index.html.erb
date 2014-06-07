@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title><%= @headers['title']%></title>
+	<meta name="description" content="<%= @headers['description'] %>">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <% if @headers['theme'] == 'bright' %>
+	  <link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
+    <% else %>
+	  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+    <% end %>
+</head>
+<body class="list">
+  <% @slides.each do |slide| %>
+	<section class="slide">
+      <div>
+        <%= slide.content %>
+      </div>
+    </section>
+  <% end %>
+
+  <% if @headers['progress'] == 'true' %>
+	<div class="progress"><div></div></div>
+  <% end %>
+
+  <script src="shower/shower.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+h1. Shower - Slide Show
+
+h2. What it is
+
+A template which outputs shower presentations using slideshow.
+
+
+h2. What's Slide Show (S9)?
+
+A Ruby gem that lets you create slide shows and author slides in plain text
+using a wiki-style markup language that's easy-to-write and easy-to-read.
+More "Slide Show (S9) Project Site":http://slideshow-s9.github.io.
+
+
+h2. What's Shower
+
+"Shower":https://github.com/shower is a HTML presentation framework available at 
+
+h2. Installation
+
+Clone this repository using `git` and save it in S9's templates directory:
+
+    $ cd ~/.slideshow/templates
+    $ git clone https://github.com/avillafiorita/slideshow-shower.git
+
+To check if the new template got installed, use the `list` command:
+
+    $ slideshow list
+
+Listing something like:
+
+<pre>
+Installed templates include:
+     shower (~/.slideshow/templates/slideshow-shower.js/shower.txt)
+</pre>
+
+Now you're ready to use it using the `-t/--template` switch. Example:
+
+<pre>
+    $ slideshow build doc/tutorial.textile -t shower --h2
+</pre>
+
+h2. Documentation
+
+Have a look at: @doc/tutorial.textile@
+
+h2. Upgrading Shower
+
+Download @shower.zip@, replace the content of the @shower@ dir, and follow the instructions in @shower.txt" to update the list of assets.
+

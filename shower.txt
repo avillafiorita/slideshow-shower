@@ -1,0 +1,51 @@
+# Reveal template package manifest
+
+__file__.html   index.html.erb
+
+# Assets
+# After updating shower, update the assets by running the following command
+#
+# egrep -v "^shower" shower.txt > shower.txt.new; find shower/* -type f >> shower.txt.new; mv shower.txt.new shower.txt
+
+shower/License.md
+shower/Readme.md
+shower/shower.min.js
+shower/themes/.DS_Store
+shower/themes/bright/.DS_Store
+shower/themes/bright/fonts/Anka.Coder.Italic.woff
+shower/themes/bright/fonts/Anka.Coder.woff
+shower/themes/bright/fonts/OpenSans.Bold.Italic.woff
+shower/themes/bright/fonts/OpenSans.Bold.woff
+shower/themes/bright/fonts/OpenSans.Italic.woff
+shower/themes/bright/fonts/OpenSans.Light.woff
+shower/themes/bright/fonts/OpenSans.woff
+shower/themes/bright/images/grid-16x10.svg
+shower/themes/bright/images/grid-4x3.svg
+shower/themes/bright/index.html
+shower/themes/bright/License.md
+shower/themes/bright/pictures/exact.png
+shower/themes/bright/pictures/square.png
+shower/themes/bright/pictures/tall.png
+shower/themes/bright/pictures/wide.png
+shower/themes/bright/Readme.md
+shower/themes/bright/styles/screen.css
+shower/themes/ribbon/.DS_Store
+shower/themes/ribbon/fonts/PTMono.woff
+shower/themes/ribbon/fonts/PTSans.Bold.Italic.woff
+shower/themes/ribbon/fonts/PTSans.Bold.woff
+shower/themes/ribbon/fonts/PTSans.Italic.woff
+shower/themes/ribbon/fonts/PTSans.Narrow.Bold.woff
+shower/themes/ribbon/fonts/PTSans.woff
+shower/themes/ribbon/images/grid-16x10.svg
+shower/themes/ribbon/images/grid-4x3.svg
+shower/themes/ribbon/images/linen.png
+shower/themes/ribbon/images/linen@2x.png
+shower/themes/ribbon/images/ribbon.svg
+shower/themes/ribbon/index.html
+shower/themes/ribbon/License.md
+shower/themes/ribbon/pictures/exact.png
+shower/themes/ribbon/pictures/square.png
+shower/themes/ribbon/pictures/tall.png
+shower/themes/ribbon/pictures/wide.png
+shower/themes/ribbon/Readme.md
+shower/themes/ribbon/styles/screen.css
