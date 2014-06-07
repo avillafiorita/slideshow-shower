@@ -1,24 +1,47 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title><%= @headers['title']%></title>
-	<meta name="description" content="<%= @headers['description'] %>">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=792, user-scalable=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title><%= @headers['title']%></title>
+  <meta name="description" content="<%= @headers['description'] %>">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <% if @headers['theme'] == 'bright' %>
-	  <link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
-    <% else %>
-	  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
-    <% end %>
+  <% if @headers['theme'] == 'bright' %>
+    <link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
+  <% else %>
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+  <% end %>
+  <style>
+   .logo {
+     position: absolute;
+     bottom: 10px;
+     left: 60px;
+   }
+   .footer {
+     position: absolute;
+     bottom: 10px;
+     left: 110px;
+
+     color: #DEDEDE;
+     font-size: smaller;
+   }
+  </style>    
+  <% if headers['css'] != nil %>
+    <link rel="stylesheet" href="<%= headers['css'] %>">
+  <% end %>
 </head>
 <body class="list">
   <% @slides.each do |slide| %>
-	<section class="slide">
-      <div>
+    <section class="slide"><div>
         <%= slide.content %>
       </div>
+      <% if headers['logo'] != nil %>
+	<span class="logo">
+	  <img src='<%= headers['logo']%>' width='50px'></img>
+	</span>
+      <% end %>
+      <span class="footer"><%= headers['footer'] %></span>
     </section>
   <% end %>
 

@@ -40,9 +40,15 @@ Now you're ready to use it using the `-t/--template` switch. Example:
     $ slideshow build doc/tutorial.textile -t shower --h2
 </pre>
 
-h2. Documentation
+h2. Example and Documentation
 
-Have a look at: @doc/tutorial.textile@
+Try the following:
+
+<pre>
+  slideshow -t shower --h2 doc/tutorial.textile
+</pre>
+
+and open: "doc/tutorial.html":doc/tutorial.html
 
 h2. Upgrading Shower
 

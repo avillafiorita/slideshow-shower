@@ -1,0 +1,11 @@
+html {
+    background-color: white;
+}
+
+.slide h2 {
+    color: orange;
+}
+
+.slide div {
+    padding-top: 50px;
+}
