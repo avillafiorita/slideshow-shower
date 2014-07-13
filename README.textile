@@ -7,37 +7,42 @@ A template which outputs shower presentations using slideshow.
 
 h2. What's Slide Show (S9)?
 
-A Ruby gem that lets you create slide shows and author slides in plain text
-using a wiki-style markup language that's easy-to-write and easy-to-read.
-More "Slide Show (S9) Project Site":http://slideshow-s9.github.io.
+A Ruby gem that lets you create slide shows and author slides in plain text using a wiki-style markup language that's easy-to-write and easy-to-read.
 
+More information: "Slide Show (S9) Project Site":http://slideshow-s9.github.io.
 
 h2. What's Shower
 
-"Shower":https://github.com/shower is a HTML presentation framework available at 
+"Shower":https://github.com/shower is an HTML presentation framework.
 
 h2. Installation
 
-Clone this repository using `git` and save it in S9's templates directory:
+Clone this repository using @git@ and save it in S9's templates directory:
 
-    $ cd ~/.slideshow/templates
-    $ git clone https://github.com/avillafiorita/slideshow-shower.git
+<pre>
+$ cd ~/.slideshow/templates
+$ git clone https://github.com/avillafiorita/slideshow-shower.git
+</pre>
 
-To check if the new template got installed, use the `list` command:
+To check if the new template got installed, use the @list@ command:
 
-    $ slideshow list
+<pre>
+$ slideshow list
+</pre>
 
-Listing something like:
+which should output something like:
 
 <pre>
 Installed templates include:
      shower (~/.slideshow/templates/slideshow-shower.js/shower.txt)
 </pre>
 
-Now you're ready to use it using the `-t/--template` switch. Example:
+Now you're ready to use the new template with the `-t/--template` switch.
+
+Example:
 
 <pre>
-    $ slideshow build doc/tutorial.textile -t shower --h2
+  $ slideshow build doc/tutorial.textile -t shower --h2
 </pre>
 
 h2. Example and Documentation
@@ -45,12 +50,12 @@ h2. Example and Documentation
 Try the following:
 
 <pre>
-  slideshow -t shower --h2 doc/tutorial.textile
+  $ slideshow -t shower --h2 doc/tutorial.textile
 </pre>
 
 and open: "doc/tutorial.html":doc/tutorial.html
 
 h2. Upgrading Shower
 
-Download @shower.zip@, replace the content of the @shower@ dir, and follow the instructions in @shower.txt" to update the list of assets.
+Download @shower.zip@ (from the shower website), replace the content of the @shower@ dir in this repository, and follow the instructions in @shower.txt@, to update the list of assets.
 
