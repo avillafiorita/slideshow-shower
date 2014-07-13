@@ -27,8 +27,8 @@
      font-size: smaller;
    }
   </style>    
-  <% if headers['css'] != nil %>
-    <link rel="stylesheet" href="<%= headers['css'] %>">
+  <% if not @headers['css'] =~ /not found/ %>
+    <link rel="stylesheet" href="<%= @headers['css'] %>">
   <% end %>
 </head>
 <body class="list">
@@ -36,12 +36,12 @@
     <section class="slide"><div>
         <%= slide.content %>
       </div>
-      <% if headers['logo'] != nil %>
+      <% if not @headers['logo'] =~ /not found/ %>
 	<span class="logo">
-	  <img src='<%= headers['logo']%>' width='50px'></img>
+	  <img src='<%= @headers['logo']%>' width='50px'></img>
 	</span>
       <% end %>
-      <span class="footer"><%= headers['footer'] %></span>
+      <span class="footer"><%= @headers['footer'] %></span>
     </section>
   <% end %>
 
