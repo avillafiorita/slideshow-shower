@@ -3,49 +3,53 @@
 __file__.html   index.html.erb
 
 # Assets
-# After updating shower, update the assets by running the following command
+# After updating shower with "bower update", update the list of assets managed by slideshow by running
+# the following command:
 #
-# egrep -v "^shower" shower.txt > shower.txt.new; find shower/* -type f >> shower.txt.new; mv shower.txt.new shower.txt
+# egrep -v "^bower_components" shower.txt > shower.txt.new; find bower_components/shower-* -type f >> shower.txt.new; mv shower.txt.new shower.txt
 
-shower/License.md
-shower/Readme.md
-shower/shower.min.js
-shower/themes/.DS_Store
-shower/themes/bright/.DS_Store
-shower/themes/bright/fonts/Anka.Coder.Italic.woff
-shower/themes/bright/fonts/Anka.Coder.woff
-shower/themes/bright/fonts/OpenSans.Bold.Italic.woff
-shower/themes/bright/fonts/OpenSans.Bold.woff
-shower/themes/bright/fonts/OpenSans.Italic.woff
-shower/themes/bright/fonts/OpenSans.Light.woff
-shower/themes/bright/fonts/OpenSans.woff
-shower/themes/bright/images/grid-16x10.svg
-shower/themes/bright/images/grid-4x3.svg
-shower/themes/bright/index.html
-shower/themes/bright/License.md
-shower/themes/bright/pictures/exact.png
-shower/themes/bright/pictures/square.png
-shower/themes/bright/pictures/tall.png
-shower/themes/bright/pictures/wide.png
-shower/themes/bright/Readme.md
-shower/themes/bright/styles/screen.css
-shower/themes/ribbon/.DS_Store
-shower/themes/ribbon/fonts/PTMono.woff
-shower/themes/ribbon/fonts/PTSans.Bold.Italic.woff
-shower/themes/ribbon/fonts/PTSans.Bold.woff
-shower/themes/ribbon/fonts/PTSans.Italic.woff
-shower/themes/ribbon/fonts/PTSans.Narrow.Bold.woff
-shower/themes/ribbon/fonts/PTSans.woff
-shower/themes/ribbon/images/grid-16x10.svg
-shower/themes/ribbon/images/grid-4x3.svg
-shower/themes/ribbon/images/linen.png
-shower/themes/ribbon/images/linen@2x.png
-shower/themes/ribbon/images/ribbon.svg
-shower/themes/ribbon/index.html
-shower/themes/ribbon/License.md
-shower/themes/ribbon/pictures/exact.png
-shower/themes/ribbon/pictures/square.png
-shower/themes/ribbon/pictures/tall.png
-shower/themes/ribbon/pictures/wide.png
-shower/themes/ribbon/Readme.md
-shower/themes/ribbon/styles/screen.css
+bower_components/shower-bright/.bower.json
+bower_components/shower-bright/bower.json
+bower_components/shower-bright/fonts/Anka.Coder.Italic.woff
+bower_components/shower-bright/fonts/Anka.Coder.woff
+bower_components/shower-bright/fonts/OpenSans.Bold.Italic.woff
+bower_components/shower-bright/fonts/OpenSans.Bold.woff
+bower_components/shower-bright/fonts/OpenSans.Italic.woff
+bower_components/shower-bright/fonts/OpenSans.Light.woff
+bower_components/shower-bright/fonts/OpenSans.woff
+bower_components/shower-bright/images/grid-16x10.svg
+bower_components/shower-bright/images/grid-4x3.svg
+bower_components/shower-bright/index.html
+bower_components/shower-bright/License.md
+bower_components/shower-bright/pictures/exact.png
+bower_components/shower-bright/pictures/square.png
+bower_components/shower-bright/pictures/tall.png
+bower_components/shower-bright/pictures/wide.png
+bower_components/shower-bright/Readme.md
+bower_components/shower-bright/styles/screen.css
+bower_components/shower-core/.bower.json
+bower_components/shower-core/bower.json
+bower_components/shower-core/License.md
+bower_components/shower-core/Readme.md
+bower_components/shower-core/shower.min.js
+bower_components/shower-ribbon/.bower.json
+bower_components/shower-ribbon/bower.json
+bower_components/shower-ribbon/fonts/PTMono.woff
+bower_components/shower-ribbon/fonts/PTSans.Bold.Italic.woff
+bower_components/shower-ribbon/fonts/PTSans.Bold.woff
+bower_components/shower-ribbon/fonts/PTSans.Italic.woff
+bower_components/shower-ribbon/fonts/PTSans.Narrow.Bold.woff
+bower_components/shower-ribbon/fonts/PTSans.woff
+bower_components/shower-ribbon/images/grid-16x10.svg
+bower_components/shower-ribbon/images/grid-4x3.svg
+bower_components/shower-ribbon/images/linen.png
+bower_components/shower-ribbon/images/linen@2x.png
+bower_components/shower-ribbon/images/ribbon.svg
+bower_components/shower-ribbon/index.html
+bower_components/shower-ribbon/License.md
+bower_components/shower-ribbon/pictures/exact.png
+bower_components/shower-ribbon/pictures/square.png
+bower_components/shower-ribbon/pictures/tall.png
+bower_components/shower-ribbon/pictures/wide.png
+bower_components/shower-ribbon/Readme.md
+bower_components/shower-ribbon/styles/screen.css
