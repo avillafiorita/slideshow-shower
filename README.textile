@@ -37,7 +37,7 @@ Installed templates include:
      shower (~/.slideshow/templates/slideshow-shower.js/shower.txt)
 </pre>
 
-Now you're ready to use the new template with the `-t/--template` switch.
+Now you're ready to use the new template with the @-t/--template@ switch.
 
 Example:
 
@@ -55,7 +55,50 @@ Try the following:
 
 and open: "doc/tutorial.html":doc/tutorial.html
 
+h2. Cover
+
+You can declare one or more slides as cover pages.  Cover pages do not have logo nor footer and can show a full-size image.
+
+Use the following code:
+
+<pre>
+!SLIDE cover
+<span>Your Title</span>
+<img src="pictures/ict4g-cover.png" alt="">
+</pre>
+
+See the "Ribbon Documentation":https://github.com/shower/shower/wiki/Ribbon for more information. 
+*Make sure you do not use @<h1>@ (@<h2>@, if you are using @--h2@) for your title, or slideshow might incorrectly break your slide at the wrong position.*
+
+h2. Personalization
+
+You can use the following data in the front matter of your presentation to control some features of shower:
+
+* @progress: true | false@, to show or hide the progress bar
+* @theme: bright | ribbon@, to choose the shower theme
+* @logo: url@, to display a logo (50px wide) on the bottom-left corner of the slides
+* @footer: text@, to display a footer text on the bottom-left corner
+
+* @css: url@, allows you to customize appearance (@url@ points to a stylesheet)
+* remember to prepend your rules with @.slide@.
+
+For instance, to change the color of slide titles to orange use:
+
+<code>
+.slide h2 {
+    color: orange
+  }
+</code>
+
 h2. Upgrading Shower
 
-Download @shower.zip@ (from the shower website), replace the content of the @shower@ dir in this repository, and follow the instructions in @shower.txt@, to update the list of assets.
+@bower@ is used to upgrade to the latest version of shower.  
 
+# install @bower@
+# go to the template directory (@~/.slideshow/templates/slideshow-shower/@)
+# update the shower packages with @bower update@
+# make sure the manifest files has all the correct links by running the following command:
+
+<pre>
+egrep -v "^bower_components" shower.txt > shower.txt.new; find bower_components/shower-* -type f >> shower.txt.new; mv shower.txt.new shower.txt
+</pre>
