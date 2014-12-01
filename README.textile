@@ -50,7 +50,7 @@ h2. Example and Documentation
 Try the following:
 
 <pre>
-  $ slideshow -t shower --h2 doc/tutorial.textile
+  $ slideshow build -t shower --h2 doc/tutorial.textile
 </pre>
 
 and open: "doc/tutorial.html":doc/tutorial.html
