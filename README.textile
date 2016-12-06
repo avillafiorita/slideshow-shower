@@ -1,104 +1,15 @@
 h1. Shower - Slide Show
 
-h2. What it is
+*OBSOLETE:* replaced by the official slideshow template.
+
+Working version: https://github.com/slideshow-templates/slideshow-shower
+
+h2. What it was
 
 A template which outputs shower presentations using slideshow.
 
+h2. Useful Links:
 
-h2. What's Slide Show (S9)?
+* "Slide Show (S9) Project Site":http://slideshow-s9.github.io.
+* "Shower":https://github.com/shower 
 
-A Ruby gem that lets you create slide shows and author slides in plain text using a wiki-style markup language that's easy-to-write and easy-to-read.
-
-More information: "Slide Show (S9) Project Site":http://slideshow-s9.github.io.
-
-h2. What's Shower
-
-"Shower":https://github.com/shower is an HTML presentation framework.
-
-h2. Installation
-
-Clone this repository using @git@ and save it in S9's templates directory:
-
-<pre>
-$ cd ~/.slideshow/templates
-$ git clone https://github.com/avillafiorita/slideshow-shower.git
-</pre>
-
-To check if the new template got installed, use the @list@ command:
-
-<pre>
-$ slideshow list
-</pre>
-
-which should output something like:
-
-<pre>
-Installed templates include:
-     shower (~/.slideshow/templates/slideshow-shower.js/shower.txt)
-</pre>
-
-Now you're ready to use the new template with the @-t/--template@ switch.
-
-Example:
-
-<pre>
-  $ slideshow build doc/tutorial.textile -t shower --h2
-</pre>
-
-h2. Example and Documentation
-
-Try the following:
-
-<pre>
-  $ slideshow build -t shower --h2 doc/tutorial.textile
-</pre>
-
-and open: "doc/tutorial.html":doc/tutorial.html
-
-h2. Cover
-
-You can declare one or more slides as cover pages.  Cover pages do not have logo nor footer and can show a full-size image.
-
-Use the following code:
-
-<pre>
-!SLIDE cover
-<span>Your Title</span>
-<img src="pictures/ict4g-cover.png" alt="">
-</pre>
-
-See the "Ribbon Documentation":https://github.com/shower/shower/wiki/Ribbon for more information. 
-*Make sure you do not use @<h1>@ (@<h2>@, if you are using @--h2@) for your title, or slideshow might incorrectly break your slide at the wrong position.*
-
-h2. Personalization
-
-You can use the following data in the front matter of your presentation to control some features of shower:
-
-* @progress: true | false@, to show or hide the progress bar
-* @theme: bright | ribbon@, to choose the shower theme
-* @logo: url@, to display a logo (50px wide) on the bottom-left corner of the slides
-* @footer: text@, to display a footer text on the bottom-left corner
-
-* @css: url@, allows you to customize appearance (@url@ points to a stylesheet)
-* remember to prepend your rules with @.slide@.
-
-For instance, to change the color of slide titles to orange use:
-
-<code>
-.slide h2 {
-    color: orange
-  }
-</code>
-
-h2. Upgrading Shower
-
-@bower@ is used to upgrade to the latest version of shower.  
-
-# install @bower@
-# go to the template directory (@~/.slideshow/templates/slideshow-shower/@)
-# update the shower packages with @bower update@
-# make sure the manifest files has all the correct links by running the following command:
-
-<pre>
-egrep -v "^bower_components" shower.txt > shower.txt.new; find bower_components/shower-* -type f >> shower.txt.new; mv shower.txt.new shower.txt
-</pre>
